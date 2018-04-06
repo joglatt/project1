@@ -3,6 +3,10 @@ body {
     font-family: 'Cabin', sans-serif;
   }
   
+  #featured-div {
+    color: whitesmoke;
+  }
+
   #logo {
     height: 200px;
     margin-top: 20px;
