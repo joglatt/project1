@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
   function searchBandsInTown(artist) {
-    var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
+    var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=06eb39d6496f7c099e8fb74c69111298";
     $.ajax({
       url: queryURL,
       method: "GET"
