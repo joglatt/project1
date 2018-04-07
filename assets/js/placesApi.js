@@ -1,9 +1,11 @@
 var map;
 var infoWindow;
 
-function initMap() {
+
+
+function initMap(loc1) {
     // Create the map.
-    var loc = { lat: -33.866, lng: 151.196 };
+    var loc = loc1;
     map = new google.maps.Map(document.getElementById('map'), {
         center: loc,
         zoom: 17
@@ -55,5 +57,12 @@ function createMarker(place) {
         infoWindow.setContent(name+address);
         infoWindow.open(map, this);
     });
+
+    // $("#test").on("click",function() {
+    //     console.log("click")
+    //     // initMap();
+    //     // loc = $(this).attr({ dataLat, dataLong });
+        
+    //   });
 
 }
