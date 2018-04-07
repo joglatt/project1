@@ -5,8 +5,10 @@
     <meta charset="utf-8">
 
     <!-- bootstrap link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous"> -->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+
 
     <!-- style.css link -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -23,7 +25,7 @@
         <div class="container">
 
             <!-- div for header/title of page -->
-            <div class="text-center">
+            <div class="center-align">
                 <!-- free logo -->
                 <img id="logo" src="assets/images/LogoMakr_2fCf5O.png" alt="logo">
 
@@ -31,7 +33,7 @@
 
             </div>
 
-            <div id="welcome" class="text-center">
+            <div id="welcome" class="center-align">
                 <p>Welcome! We're here to help you see your favorite bands when they are on tour. Along with concerts, see locations
                     of nearby bars/pubs. Just enter a band/musician into our search engines to get started.
                     <hr>
@@ -44,7 +46,9 @@
                     <label class="instruction" for="searchBand">
                         <span id="enter">Search Upcoming Tour Dates:</span>
                     </label>
-                    <input type="text" class="form-control" id="searchBand" placeholder="Enter Musician/Band Name Here">
+                    <div class="input-field">
+                        <input type="text" class="form-control" id="searchBand" placeholder=" Enter Musician/Band Name Here">
+                    </div>
                 </div>
                 <!-- <div class="form-group">
             <label class="instruction" for="searchLocation"><span id="enter">Search Location:</span></label>
@@ -53,9 +57,9 @@
             </form>
 
             <!-- buttons -->
-            <button type="button" class="btn btn-default" id="search-btn">Search</button>
+            <a class="waves-effect waves-light btn blue" id="search-btn">Search</a>
 
-            <button type="button" class="btn btn-default" id="clear-btn">Clear Results</button>
+            <a class="waves-effect waves-light btn blue" id="clear-btn">Clear Results</a>
 
         </div>
 
@@ -71,21 +75,24 @@
         </div>
 
         <div class="container" id="featured-div"> </div>
-        
+
     </div>
     <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmd0Du1P5eZCZQTvzdqV9GDg5bpFeKxuE&libraries=places&callback=initMap"
-        async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmd0Du1P5eZCZQTvzdqV9GDg5bpFeKxuE&libraries=places" async
+        defer></script>
+
+    <!-- &callback=initMap -->
     <!-- jquery link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- boostrap js link -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
     <!-- js file link -->
-
     <script type="text/javascript" src="assets/js/bands.js"></script>
     <script type="text/javascript" src="assets/js/placesApi.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+
 
 </body>
 
