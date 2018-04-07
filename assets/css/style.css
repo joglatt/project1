@@ -141,4 +141,9 @@ body {
   .wrapper footer .social-icon:hover {
     opacity: 1;
   }
+
+  #map {
+    height: 300px;
+    width: 300px;
+}
   
