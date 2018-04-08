@@ -31,15 +31,15 @@ $(document).ready(function() {
         var locBand = { lat: venueLat, lng: venueLong };
         // these are plugging the results to html
         var p1 = $("<p>").text(venueName);
-        var mapsBut = $(
-          "<button class=mapsbutton>Get Drunk</button>"
-        );
-        mapsBut.attr({ dataLat: venueLat, dataLong: venueLong });
+        var mapsBut = $("<button class=mapsbutton>Get Drunk</button>");
+        mapsBut.prop({ dataLat: venueLat, dataLong: venueLong });
 
         mapsBut.on("click", function() {
-          console.log($(this).attr(dataLat));
-          // loc = $(this).attr({dataLat, dataLong });
-          // initMap(loc);
+          var loc1 = {};
+          loc1.lat = $(this).prop("dataLat");
+          loc1.long = $(this).prop("dataLong");
+          console.log(loc1);
+          initMap();
         });
         var pB = $("<hr>");
         var p2 = $("<a>")
