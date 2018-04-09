@@ -11,7 +11,7 @@ $(document).ready(function() {
     }).then(function(response) {
       console.log(response);
       for (var i = 0; i < response.length; i++) {
-        // Logging and debugging
+        // Logging and debuggin
         console.log("this is the artist name: " + response[i].lineup);
         console.log("this is the venue name: " + response[i].venue.name);
         console.log(
@@ -31,14 +31,20 @@ $(document).ready(function() {
         var locBand = { lat: venueLat, lng: venueLong };
         // these are plugging the results to html
         var p1 = $("<p>").text(venueName);
-        var mapsBut = $("<button class=mapsbutton>Get Drunk</button>");
+        var mapsBut = $(
+          "<a class= 'modal-trigger waves-effect waves-light btn blue'>Get Drunk</a>"
+        );
+        mapsBut.attr("href","#modal1" )
         mapsBut.prop({ dataLat: venueLat, dataLong: venueLong });
 
         mapsBut.on("click", function() {
-         loc1 = {};
+          loc1 = {};
           loc1.lat = parseFloat($(this).prop("dataLat"));
           loc1.lng = parseFloat($(this).prop("dataLong"));
           console.log(loc1);
+          var elem = document.querySelector(".modal");
+          var instance = M.Modal.init(elem);
+
           initMap();
         });
         var pB = $("<hr>");
