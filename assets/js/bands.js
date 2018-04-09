@@ -35,9 +35,9 @@ $(document).ready(function() {
         mapsBut.prop({ dataLat: venueLat, dataLong: venueLong });
 
         mapsBut.on("click", function() {
-          var loc1 = {};
-          loc1.lat = $(this).prop("dataLat");
-          loc1.long = $(this).prop("dataLong");
+         loc1 = {};
+          loc1.lat = parseFloat($(this).prop("dataLat"));
+          loc1.lng = parseFloat($(this).prop("dataLong"));
           console.log(loc1);
           initMap();
         });
