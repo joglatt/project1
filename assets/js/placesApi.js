@@ -2,10 +2,9 @@ var map;
 var infoWindow;
 
 
-
+// Creates the map.
 function initMap() {
-    // Create the map.
-    // var loc = { lat: -33.866, lng: 151.196 };
+    //location equals location pulled from maps button
     var loc = loc1;
     console.log(loc);
     map = new google.maps.Map(document.getElementById('map'), {
@@ -21,7 +20,9 @@ function initMap() {
 
     // Perform a nearby search.
     service.nearbySearch(
-        { location: loc, radius: 500, types: ["liquor-store"] },
+
+        { location: loc, radius: 500, type: ['bar'] },
+
         function (results, status, pagination) {
             if (status !== 'OK') return;
 
