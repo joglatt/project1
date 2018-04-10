@@ -20,7 +20,9 @@ function initMap() {
 
     // Perform a nearby search.
     service.nearbySearch(
+
         { location: loc, radius: 500, type: ['bar'] },
+
         function (results, status, pagination) {
             if (status !== 'OK') return;
 
