@@ -10,7 +10,7 @@ function initMap() {
     console.log(loc);
     map = new google.maps.Map(document.getElementById('map'), {
         center: loc,
-        zoom: 17
+        zoom: 15
     });
 
     // Create the places service.
