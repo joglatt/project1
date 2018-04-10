@@ -21,7 +21,7 @@ function initMap() {
 
     // Perform a nearby search.
     service.nearbySearch(
-        { location: loc, radius: 500, type: ['liquor_store'] },
+        { location: loc, radius: 500, types: ["liquor-store"] },
         function (results, status, pagination) {
             if (status !== 'OK') return;
 
