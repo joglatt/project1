@@ -3,12 +3,14 @@ var infoWindow;
 
 
 
-function initMap(loc1) {
+function initMap() {
     // Create the map.
+    // var loc = { lat: -33.866, lng: 151.196 };
     var loc = loc1;
+    console.log(loc);
     map = new google.maps.Map(document.getElementById('map'), {
         center: loc,
-        zoom: 17
+        zoom: 15
     });
 
     // Create the places service.
@@ -19,7 +21,7 @@ function initMap(loc1) {
 
     // Perform a nearby search.
     service.nearbySearch(
-        { location: loc, radius: 500, type: ['liquor_store'] },
+        { location: loc, radius: 500, types: ["liquor-store"] },
         function (results, status, pagination) {
             if (status !== 'OK') return;
 
@@ -58,11 +60,6 @@ function createMarker(place) {
         infoWindow.open(map, this);
     });
 
-    // $("#test").on("click",function() {
-    //     console.log("click")
-    //     // initMap();
-    //     // loc = $(this).attr({ dataLat, dataLong });
-        
-    //   });
+
 
 }
