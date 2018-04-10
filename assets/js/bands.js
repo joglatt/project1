@@ -31,25 +31,35 @@ $(document).ready(function() {
         var locBand = { lat: venueLat, lng: venueLong };
         // these are plugging the results to html
         var p1 = $("<p>").text(venueName);
+        //creates button next to results
         var mapsBut = $(
           "<a class= 'modal-trigger waves-effect waves-light btn blue'>Get Drunk</a>"
         );
-        mapsBut.attr("href","#modal1" )
+        //button opens modal
+        mapsBut.attr("href", "#modal1");
+        //applies the latitude and longitude data for venue to button
         mapsBut.prop({ dataLat: venueLat, dataLong: venueLong });
-
+        //on click function for maps button
         mapsBut.on("click", function() {
+          //loc 1 is a blan object
           loc1 = {};
+          // loc 1 latitude and longitude are floats of the latitutde and longitude output from bands in town
           loc1.lat = parseFloat($(this).prop("dataLat"));
           loc1.lng = parseFloat($(this).prop("dataLong"));
-          console.log(loc1);
+          // console.log(loc1);
+          //materialize code for opening modal
           var elem = document.querySelector(".modal");
           var instance = M.Modal.init(elem);
+          //initializes the map
           initMap();
         });
+        //creates horizontal rule after each results
         var pB = $("<hr>");
+        //creates link to buy tickets to evernts
         var p2 = $("<a>")
           .attr("href", eventURL)
           .text("Click to buy tickets");
+          //appends all of it to feauted div
         $("#featured-div").append(p1, p2, mapsBut, pB);
       }
     });
@@ -69,5 +79,4 @@ $(document).ready(function() {
 //empties out results
 $("#clear-btn").on("click", function(event) {
   $("#featured-div").empty();
-
 });
