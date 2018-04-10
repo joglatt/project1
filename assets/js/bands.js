@@ -44,7 +44,6 @@ $(document).ready(function() {
           console.log(loc1);
           var elem = document.querySelector(".modal");
           var instance = M.Modal.init(elem);
-
           initMap();
         });
         var pB = $("<hr>");
@@ -59,10 +58,16 @@ $(document).ready(function() {
   // This event reads the artist entered to the search form when user hits search
   // button and calls the main bands events function
   $("#search-btn").on("click", function(event) {
+    $("#featured-div").empty();
     event.preventDefault();
     var inputBand = $("#searchBand")
       .val()
       .trim();
     searchBandsInTown(inputBand);
   });
+});
+//empties out results
+$("#clear-btn").on("click", function(event) {
+  $("#featured-div").empty();
+
 });
