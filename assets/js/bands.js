@@ -29,8 +29,19 @@ $(document).ready(function() {
         var venueLong = response[i].venue.longitude;
         var eventURL = response[i].url;
         var locBand = { lat: venueLat, lng: venueLong };
+        var eventDate = response[i].datetime.substring(0, 10);
+
+         var formattedEventDate = new Date( Date.parse(eventDate) );
+
+        var newStr = formattedEventDate.toString();
+
+        console.log("String: " + newStr.substring(0,15));
+
+        console.log("this is the date of show: " + eventDate);
+        console.log("this is the formattted date: " + formattedEventDate);
         // these are plugging the results to html
         var p1 = $("<p>").text(venueName);
+        var p3 = $("<p>").text(newStr.substring(0,15));
         //creates button next to results
         var mapsBut = $(
           "<a class= 'modal-trigger waves-effect waves-light btn blue'>Get Drunk</a>"
@@ -60,7 +71,7 @@ $(document).ready(function() {
           .attr("href", eventURL)
           .text("Click to buy tickets");
           //appends all of it to feauted div
-        $("#featured-div").append(p1, p2, mapsBut, pB);
+        $("#featured-div").append(p1, p3, p2, mapsBut, pB);
       }
     });
   }
