@@ -45,8 +45,7 @@ function initMap() {
 }
 
 function createMarker(place) {
-
-    //add markers
+    //add markers;
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location,
@@ -57,7 +56,7 @@ function createMarker(place) {
     google.maps.event.addListener(marker, 'click', function () {
         var name = "<p><strong> " + place.name + "</strong></br>";
         var address = "Store Address: " + place.formatted_address + "</p>";
-        infoWindow.setContent(name+address);
+        infoWindow.setContent(name + address);
         infoWindow.open(map, this);
     });
 
