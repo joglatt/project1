@@ -51,9 +51,13 @@ function createMarker(place) {
 
   //expand marker when clicked
   google.maps.event.addListener(marker, "click", function() {
+      console.log(place.url);
     var name = "<p><strong> " + place.name + "</strong></br>";
-    var address = "Store Address: " + place.formatted_address + "</p>";
-    infoWindow.setContent(name + address);
+    var address = "Address: " + place.formatted_address+ "</br>";
+    var link = `<a href="${place.url}">Open in Google Maps</a>`
+
+   ;
+    infoWindow.setContent(name + address + link);
     infoWindow.open(map, this);
   });
 }
