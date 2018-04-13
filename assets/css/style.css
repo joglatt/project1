@@ -24,14 +24,14 @@ body {
     color: white;
     font-size: 17px;
   }
-
-  #recent-user-header {
-    color: white;
-  }
-  
   #welcome {
     color: white;
   }
+  /* #recent-user-header {
+    color: white;
+  }
+  
+
   
   .date-div {
     display: inline-block;
@@ -59,21 +59,21 @@ body {
   
   #upcomingEventDiv{
     color: white;
-  }
+  } */
   
-  .jumbotron {
-    /*background-color: #DCAE1D;
-    color: #393f4d;*/
+  /* .jumbotron {
+    background-color: #DCAE1D;
+    color: #393f4d;
     color: white;
     background-repeat: repeat-x;
     background-image: url("cLErj2.jpg");
     background-size: 100%;
     border-style: solid; 
     border-width: 1px;
-  /*  padding-top: 100px;*/
-  }
+   padding-top: 100px;
+  } */
   
-  .well {
+  /* .well {
     background-color:  #ffffff; 
   }
   
@@ -95,8 +95,8 @@ body {
   
   .instruction {
     color: #d4d4dc;
-  }
-  
+  } */
+/*   
   
   .page-title {
     text-align: center;
@@ -105,7 +105,7 @@ body {
     font-size: 40px;
     margin-top: 60px;
     margin-bottom: 40px;
-  }
+  } */
   
   .wrapper {
     width: 100%;
