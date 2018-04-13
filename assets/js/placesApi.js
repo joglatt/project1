@@ -59,7 +59,7 @@ function createMarker(place) {
       console.log(place.url);
     var name = "<p><strong> " + place.name + "</strong></br>";
     var address = "Address: " + place.formatted_address+ "</br>";
-    var link = `<a href="${place.url}">Open in Google Maps</a>`
+    var link = `<a href="${place.url}" target="_blank">Open in Google Maps</a>`
 
    ;
     infoWindow.setContent(name + address + link);
