@@ -25,6 +25,12 @@ body {
     font-size: 17px;
   }
 
+  #welcome {
+    color: white;
+  }
+  /* #recent-user-header {
+
+
   #featured-div p {
     font-family: 'Gloria Hallelujah';
     font-size: 20px;
@@ -40,8 +46,11 @@ body {
 
 /* 
   #recent-user-header {
+
     color: white;
   }
+  
+
   
   .date-div {
     display: inline-block;
@@ -67,8 +76,12 @@ body {
     margin-bottom: 20px;
   }
   
- */
-/*   
+
+  #upcomingEventDiv{
+    color: white;
+  } */
+  
+
   .jumbotron {
     background-color: #DCAE1D;
     color: #393f4d;
@@ -79,9 +92,9 @@ body {
     border-style: solid; 
     border-width: 1px;
    padding-top: 100px;
-  }
+
   
-  .well {
+  /* .well {
     background-color:  #ffffff; 
   }
   
@@ -103,9 +116,7 @@ body {
   
   .instruction {
     color: #d4d4dc;
-  }
-  
-   */
+
   .page-title {
     text-align: center;
     color: #FFFFFF;
@@ -113,7 +124,7 @@ body {
     font-size: 40px;
     margin-top: 60px;
     margin-bottom: 40px;
-  }
+  } */
   
   .wrapper {
     width: 100%;
