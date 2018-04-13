@@ -42,8 +42,12 @@ function initMap() {
 var beer = "assets/images/beer-icon.png";
 //add markers
 function createMarker(place) {
-
   var marker = new google.maps.Marker({
+    position: map.getCenter(),
+    map:map,
+  });
+  var marker = new google.maps.Marker({
+    //sets marker icon as beer
     icon: beer,
     map: map,
     position: place.geometry.location,
