@@ -50,7 +50,7 @@ $(document).ready(function() {
               });
 
               var pB = $("<hr>");
-              var p2 = $("<a>").attr("href", eventURL).text("Click to buy tickets");
+              var p2 = $("<a>").attr({ href: eventURL, target: '_blank' }).text("Click to buy tickets");
 
         $("#featured-div").append(p1, p4, p3, p2, mapsBut, pB);
       }
