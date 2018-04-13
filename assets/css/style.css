@@ -25,11 +25,21 @@ body {
     font-size: 17px;
   }
 
-  #recent-user-header {
+  #featured-div p {
+    font-family: 'Gloria Hallelujah';
+    font-size: 20px;
+  }
+
+  #welcome {
     color: white;
   }
   
-  #welcome {
+  #upcomingEventDiv{
+    color: white;
+  }
+
+/* 
+  #recent-user-header {
     color: white;
   }
   
@@ -57,20 +67,18 @@ body {
     margin-bottom: 20px;
   }
   
-  #upcomingEventDiv{
-    color: white;
-  }
-  
+ */
+/*   
   .jumbotron {
-    /*background-color: #DCAE1D;
-    color: #393f4d;*/
+    background-color: #DCAE1D;
+    color: #393f4d;
     color: white;
     background-repeat: repeat-x;
     background-image: url("cLErj2.jpg");
     background-size: 100%;
     border-style: solid; 
     border-width: 1px;
-  /*  padding-top: 100px;*/
+   padding-top: 100px;
   }
   
   .well {
@@ -97,7 +105,7 @@ body {
     color: #d4d4dc;
   }
   
-  
+   */
   .page-title {
     text-align: center;
     color: #FFFFFF;
